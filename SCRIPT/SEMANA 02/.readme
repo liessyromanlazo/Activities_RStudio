@@ -1,1 +1,9 @@
-
+ACTIVIDAD: Como crear un proyecto en RStudio
+1. Abrimos RStudio.
+2. En la parte superior izquierda, hacemos clic en “File”.
+3. Seleccionamos “New Project…”.
+4. Se abre una ventana con opciones y legimos “New Directory”.
+5. Escribimos el nombre del proyecto. “ROMAN_LAZO_LIESSY PORTAFOLIO”
+6. Elegimos dónde guardar la carpeta del proyecto en nuestra computadora.
+7. Hacemos clic en “Create Project”
+8. RStudio se reinicia dentro del proyecto y ya está listo para trabajar
