@@ -1,0 +1,28 @@
+---
+title: "SEMANA6_ROMAN LAZO"
+author: "ROMAN LAZO LIESSY MAYTE CRISTHIN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## ACTIVIDAD: *Cómo limpiar una data para utilizar una columna especifica* 
+
+1\. Importamos la data: s12 hipert_covid.csv
+
+2\. Copiamos el código y lo copiamos en el script.
+
+```{r}
+data <- read.csv("C:/Users/jkarb/Downloads/s12_hipert_covid.csv")
+```
+
+3\. Hacemos Ctrl+Enter, para ejecutar el código.
+
+4.. Luego limpiamos la data, específicamente en una columna específica en este caso elegí la columna de p_a_diastolica
+
+```{r}
+data_limpia<-data[!is.na(data$p_a_diastolica),]
+```
