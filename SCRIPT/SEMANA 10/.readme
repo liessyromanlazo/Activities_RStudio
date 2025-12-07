@@ -1,1 +1,7 @@
+ACTIVIDAD: Calcular las Medidas de Tendencia Central(Media aritmética, Mediana y Moda)
 
+1. Abrimos RStudio.
+2. Cargamos nuestra base de datos en un objeto llamado s12_hipert_covid.cvs
+3. Ya tenemos cargada nuestra data y extraída la columna:
+4. Ahora calculamos las medias de TC
+5. Observamos los resultados en la consola
