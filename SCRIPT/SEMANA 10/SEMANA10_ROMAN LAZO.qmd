@@ -1,0 +1,50 @@
+---
+title: "SEMANA10_ROMAN LAZO"
+author: "ROMAN LAZO LIESSY MAYTE CRISTHIN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## ACTIVIDAD: Calcular las Medidas de Tendencia Central(Media aritmética, Mediana y Moda) 
+
+1.  Cargamos nuestra base de datos en un objeto llamado s12_hipert_covid.cvs.
+
+    ```{r}
+    s12_hipert_covid <- read_csv("s12_hipert_covid.csv")
+    View(s12_hipert_covid)
+    ```
+
+2.  Ya tenemos cargada nuestra data y extraída la columna
+
+    ```{r}
+    apertura<-data$frec_respiratoria
+    head(apertura)
+    ```
+
+3.  Ahora calculamos las medias de TC
+
+    ```{r}
+    # Media
+    prom <- mean(apertura)
+    prom
+    ```
+
+    ```{r}
+    # Mediana
+    mediana <- median(apertura)
+    mediana
+    ```
+
+    ```{r}
+    #Moda
+    moda <- names(sort(table(apertura), decreasing = TRUE))[1]
+    moda
+    ```
+
+4.  Observamos los resultados en la consola.
+
+    ![](images/Captura de pantalla 2025-11-29 101355.png)
