@@ -1,1 +1,12 @@
+ACTIVIDAD: Como instalar un paquete en Rstudio-Realiza tu gráfico estadístico (Histograma)
 
+1. Abrimos RStudio.
+2. En la consola, escribimos: install.packages("readr") (“fdth”)
+3. Presionamos Enter.
+4. Y esperamos a que se instale.
+5. Luego activamos el paquete:
+6. Importamos nuestro archivo CSV y visualizamos la data en RStudio
+7. Seleccionamos la columna con la que queremos trabajar, en este caso:
+frec_respiratoria
+8. Creamos la tabla de frecuencias usando el paquete fdt y realizamos el histograma básico:
+9. Y lo ejecutamos con Ctrl+Enter
