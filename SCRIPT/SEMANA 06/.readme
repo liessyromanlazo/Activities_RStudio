@@ -1,1 +1,7 @@
+ACTIVIDAD: Cómo limpiar una data para utilizar una columna especifica
 
+1. Importamos la data
+2. Buscamos la data en nuestros archivos: "s12 hipert_covid.csv"
+3. Copiamos el código y lo copiamos en el script.
+4. Hacemos Ctrl+Enter, para ejecutar el código.
+5. Luego limpiamos la data, específicamente en una columna específica en este caso elegí la columna de p_a_diastolica.
