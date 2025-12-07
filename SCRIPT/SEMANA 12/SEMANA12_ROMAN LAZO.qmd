@@ -1,0 +1,78 @@
+---
+title: "SEMANA12_ROMAN LAZO"
+author: "ROMAN LAZO LIESSY MAYTE CRISTHIN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## ACTIVIDAD: *Calcular las Medidas de Dispersión (varianza, Desviación estándar, Rango, Rango intercuartílico) y de Posición (Cuartiles), script para visualizar las 6 primeras filas, y para poder visualizar un resumen de dichas medidas* 
+
+1.  Ya tenemos la columna cargada en la variable apertura:
+
+    ```{r}
+    data<-read.csv("s12_hipert_covid.csv")
+    ```
+
+2.  Visualizamos la data con la opción View() para comprobar que se haya cargado correctamente y revisar sus variables.
+
+    ```{r}
+    View(s12_hipert_covid)
+    ```
+
+3.  Mostramos las primeras 6 filas del dataset usando head() para obtener una vista rápida del contenido general de la tabla.
+
+    ```{r}
+    head(data)
+    ```
+
+4.  Revisamos la estructura de la data con la función str()
+
+    ```{r}
+    str(data)
+    ```
+
+5.  Seleccionamos la columna con la que vamos a trabajar, en este caso la variable “edad”, y la guardamos en un objeto llamado apertura para facilitar los cálculos posteriores.
+
+    ```{r}
+    apertura<-data$edad
+    head(apertura)
+    ```
+
+6.  Calculamos la Varianza de la variable “edad” para conocer qué tan dispersos están los datos respecto a la media.
+
+    ```{r}
+    #varienza
+    var(data$edad,na.rm = TRUE)
+    ```
+
+7.  Calculamos la Desviación estándar, el Rango, el Rango Intercuartílico y los Cuartiles.
+
+    ```{r}
+    #deviacion estandar
+    sd(data$Edad,na.rm = TRUE)
+    ```
+
+    ```{r}
+    #rango
+    range(data$Edad,na.rm = TRUE)
+    ```
+
+    ```{r}
+    #rango intercuartilico
+    IQR(data$Edad,na.rm = TRUE)
+    ```
+
+    ```{r}
+    #cuartil
+    quantile(data$Edad, probs = c(0.25,0.5,0.75,0.90),na.rm = TRUE)
+    ```
+
+8.  Finalmente, revisamos los resultados en la consola y verificamos si existen valores atípicos, datos faltantes o resultados inusuales que puedan requerir limpieza o revisión adicional
+
+    ```{r}
+    summary(data$Edad)
+    ```
