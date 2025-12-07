@@ -1,1 +1,14 @@
+ACTIVIDAD: Calcular las Medidas de Dispersión (varianza, Desviación estándar, Rango, Rango intercuartílico) y de Posición (Cuartiles), script para visualizar las 6 primeras filas, y
+para poder visualizar un resumen de dichas medidas
 
+1. Abrimos RStudio.
+2. Ya tenemos la columna cargada en la variable apertura:
+3. Visualizamos la data con la opción View() para comprobar que se haya cargado correctamente y revisar sus variables.
+4. Mostramos las primeras 6 filas del dataset usando head() para obtener una vista rápida del contenido general de la tabla.
+5. Revisamos la estructura de la data con la función str()
+6. Seleccionamos la columna con la que vamos a trabajar, en este caso la variable “edad”, y la guardamos en un objeto llamado apertura para facilitar los cálculos
+posteriores.
+7. Calculamos la Varianza de la variable “edad” para conocer qué tan dispersos están los datos respecto a la media.
+8. Calculamos la Desviación estándar, el Rango, el Rango Intercuartílico y los Cuartiles.
+9. Finalmente, revisamos los resultados en la consola y verificamos si existen valores
+atípicos, datos faltantes o resultados inusuales que puedan requerir limpieza o revisión adicional
