@@ -1,0 +1,52 @@
+---
+title: "SEMANA8_ROMAN LAZO"
+author: "ROMAN LAZO LIESSY MAYTE CRISTHIN"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## ACTIVIDAD 8: *Como instalar un paquete en Rstudio-Realiza tu gráfico estadístico (Histograma)* 
+
+1.  En la consola, escribimos: install.packages("readr") (“fdth”).
+
+    ```{r}
+    install.packages("readr")
+    install.packages("fdth")
+    ```
+
+2.  Luego activamos el paquete:
+
+    ```{r}
+    library(readr)
+    library(fdth)
+    ```
+
+3.  . Importamos nuestro archivo CSV y visualizamos la data en RStudio
+
+    ```{r}
+    s12_hipert_covid <- read_csv("s12_hipert_covid.csv")
+    View(s12_hipert_covid)
+    ```
+
+4.  Seleccionamos la columna con la que queremos trabajar, en este caso: `frec_respiratoria.`
+
+    ```{r}
+    apertura<-data$frec_respiratoria
+    head(apertura)
+    ```
+
+5.  Creamos la tabla de frecuencias usando el paquete fdt y realizamos el histograma básico.
+
+    ```{r}
+    tabla<-fdt(apertura)
+    tabla
+    ```
+
+    ```{r}
+    hist(apertura)
+    hist(apertura,col = "purple"
+    ```
